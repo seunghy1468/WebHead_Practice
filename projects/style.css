@@ -42,7 +42,7 @@ a {
 }
 
 .navbar_menu li:hover {
-  background: palevioletred;
+  background: orange;
   border-radius: 4px;
 }
 .navbar_sns {
