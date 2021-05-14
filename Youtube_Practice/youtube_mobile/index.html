@@ -6,14 +6,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Youtube Mobile</title>
         <link rel="stylesheet" href="style.css">
+        <script src="main.js" defer></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
-        <script></script>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/652eb36361.js" crossorigin="anonymous"></script>
     </head>
 
     <body>
         <!-- header -->
-        <nav class="title">
+        <header class="title">
             <div class="logo">
                 <a href=""><i class="fas fa-bars"></i></a>
                 <a href=""><i class="fab fa-youtube"></i>
@@ -26,37 +27,102 @@
                 <li><a href=""><i class="fas fa-border-all"></i></a></li>
                 <li><a href=""><i class="fas fa-bell"></i></a></li>
             </ul>
-        </nav>
+        </header>
 
         <!-- video -->
         <section class="player">
-            <video controls width="250" src="happyBoy.mp4"></video>
+            <video controls width="500" src="happyBoy.mp4"></video>
         </section>
 
-        <!-- 설명 -->
-        <section class="info">
-            <div class="metadata">
-                <ul class="hashtags">
-                    <li>#Dream</li>
-                    <li>#HappyBoy</li>
-                    <li>#BlackMan</li>
-                </ul>
-
-                <div class="titleAndButton">
-                    <span class="title">
-                        유튜브 모바일 웹사이트를 보면서 무작정 따라하기.
-                        | 프론트앤드 개발자 입문 : html, css, javaScript</span>
-                        <button class="moreBtn"></button>
+        <div class="inforAndUpnext">
+                <!-- 설명 -->
+            <section class="info">
+                <!--* #tag, 영상내용 설명, moreBtn 등 *-->
+                <div class="metadata">
+                    <ul class="hashtags">
+                        <li>#Dream</li>
+                        <li>#HappyBoy</li>
+                        <li>#BlackMan</li>
+                    </ul>
+                    <div class="titleAndButton">
+                        <span class="title clamp">
+                            유튜브 모바일 웹사이트를 보면서 무작정 따라하기.
+                            | 프론트앤드 개발자 입문 : html, css, javaScript</span>
+                            <button class="moreBtn">
+                                <i class="fas fa-caret-down"></i>
+                            </button>
+                    </div>
+                        <span class="views">1M views 1 month ago</span>
                 </div>
-                <div class="Views"></div>
-            </div>
-            <div class="actions"></div>
-            <div class="channel"></div>
-        </section>
 
-        <!-- 추가영상 -->
-        <section class="upNext">
+                <!--* 좋아요, 싫어요 등 *-->
+                <div class="actions">
+                    <li><button><i class="active fas fa-thumbs-up"></i><span>Like</span></button></li>
+                    <li><button><i class="fas fa-thumbs-down"></i><span>Unlike</span></button></li>
+                    <li><button><i class="fas fa-share"></i><span>Share</span></button></li>
+                    <li><button><i class="fas fa-plus"></i><span>Save</span></button></li>
+                    <li><button><i class="fas fa-flag"></i><span>Report</span></button></li>
+                </div>
 
-        </section>
+                <!--* 유튜버 사진 및 이름, subscribe *-->
+                <div class="channel">
+                    <div class="metadata">
+                        <img width="500" src="happyBoy.PNG" alt="">
+                        <div class="info">
+                            <span class="name">김두한 채널</span>
+                            <span class="subscribers">1M Subscribers</span>
+                        </div>
+                    </div>
+
+                    <button class="subscribe">subscribe</button>
+                </div>
+            </section>
+
+            <!-- 추가영상 -->
+            <section class="upNext">
+                <span class="title">Up next</span>
+                <ul>
+                    <li class="item">
+                        <div class="img">
+                            <img width="250" src="./1.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="title">행복해하는 외국인</span>
+                            <span class="channel_name">이세켄</span>
+                            <span class="views">20K views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img width="250" src="./2.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="title">외국인 도촬 사진</span>
+                            <span class="channel_name">이세켄</span>
+                            <span class="views">43K views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="img">
+                            <img width="250" src="./3.jpg" alt="">
+                        </div>
+                        <div class="info">
+                            <span class="title">뉴스보는 외국인</span>
+                            <span class="channel_name">이세켄</span>
+                            <span class="views">16K views</span>
+                        </div>
+                        <button class="moreBtn">
+                            <i class="fas fa-caret-down"></i>
+                        </button>
+                    </li>
+                </ul>
+            </section>
+        </div>
     </body>
 </html>

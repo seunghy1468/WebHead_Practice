@@ -1,0 +1,250 @@
+:root {
+  /* color */
+  --white-color: #fff;
+  --black-color: #140a00;
+  --blue-color: #045fd4;
+  --red-color: #ff0000;
+  --gray-dark-color: #909090;
+  --gray-light-color: #e0e0e0;
+
+  /* padding size */
+  --side-padding: 12px;
+  --avatar-size: 36px;
+  --padding: 12px;
+
+  /* font size */
+  --font-large: 18px;
+  --font-medium: 14px;
+  --font-small: 12px;
+  --font-micro: 10px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto;
+}
+
+li {
+  list-style: none;
+}
+
+button,
+button:focus {
+  border: none;
+  cursor: pointer;
+  outline: none;
+  background: var(--white-color);
+}
+
+/* header */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--padding);
+  background-color: var(--black-color);
+}
+
+header a {
+  color: var(--white-color);
+  text-decoration: none;
+}
+
+header .logo {
+  font-size: var(--font-medium);
+}
+
+header .logo i {
+  color: var(--red-color);
+  margin-left: var(--side-padding);
+}
+
+header .icons {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-small);
+}
+
+header .icons li {
+  margin-left: var(--side-padding);
+}
+header .icons .fa-search {
+  margin-right: var(--side-padding);
+}
+
+/* video */
+.player {
+  /* position sticky를 할 때, 어디에 붙어 있을지 설정해주어야 한다. */
+  position: sticky;
+  top: 0;
+  text-align: center;
+  background-color: var(--black-color);
+}
+
+.player video {
+  width: 100%;
+  height: 100%;
+  max-width: 500px;
+}
+
+body > .info {
+  padding: var(--padding);
+}
+
+.info .metadata .hashtags {
+  display: flex;
+  font-size: var(--font-small);
+  color: var(--blue-color);
+}
+
+.info .metadata .hashtags li {
+  margin-right: var(--side-padding);
+}
+
+.info .metadata .titleAndButton {
+  display: flex;
+}
+
+.info .metadata .titleAndButton .title {
+  font-size: var(--font-medium);
+  margin-right: var(--side-padding);
+}
+
+.info .metadata .titleAndButton .title .clamp {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.info .metadata .titleAndButton .moreBtn {
+  height: 100%;
+}
+
+.info .metadata .titleAndButton .moreBtn .clicked {
+  transition: transfrom 300ms ease-in-out;
+}
+
+.info .views {
+  font-size: var(--font-micro);
+  color: var(--gray-dark-color);
+}
+
+/* 좋아요 싫어요 tag */
+.info .actions {
+  display: flex;
+  justify-content: space-around;
+  margin: var(--padding) 0;
+}
+
+.info .actions button {
+  display: flex;
+  flex-direction: column;
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
+}
+
+.actions button i {
+  margin: 0 auto;
+  margin-bottom: calc(var(--side-padding) / 2);
+  font-size: var(--font-medium);
+}
+
+.actions button i.active {
+  color: var(--blue-color);
+}
+
+/* 채널 정보 */
+.channel {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--gray-light-color);
+  border-bottom: 1px solid var(--gray-light-color);
+}
+
+.channel .metadata {
+  display: flex;
+  align-items: center;
+}
+
+.channel .metadata img {
+  width: var(--avatar-size);
+  height: var(--avatar-size);
+  border: var(--gray-dark-color);
+  border-radius: 50%;
+}
+
+.channel .metadata .info {
+  display: flex;
+  flex-direction: column;
+}
+
+.channel .metadata .info .name {
+  font-size: var(--font-medium);
+}
+
+.channel .metadata .info .subscribers {
+  font-size: var(--font-micro);
+  color: var(--gray-dark-color);
+}
+
+.channel .subscribe {
+  text-transform: uppercase;
+  color: var(--red-color);
+  font-size: var(--font-small);
+}
+
+.upNext {
+  padding: 0 var(--side-padding);
+}
+
+/* 자식노드 > selector를 이용해서 바로 따라오는 애만 적용! */
+.upNext > .title {
+  font-size: var(--font-small);
+  color: var(--gray-dark-color);
+  margin-bottom: calc(var(--padding));
+}
+
+.upNext .item {
+  display: flex;
+  margin-top: var(--side-padding);
+}
+
+/* width를 설정해주어야 35% 60% 5%로 나뉘어짐 */
+.upNext .item .img img {
+  width: 100%;
+}
+
+.upNext .item .img {
+  flex: 1 1 35%;
+  margin-right: var(--side-padding);
+}
+
+.upNext .item .info {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 60%;
+}
+.upNext .item .moreBtn {
+  flex: 1 1 5%;
+}
+
+.upNext .item .info .channel_name {
+  font-size: var(--font-small);
+}
+
+.inforAndUpnext {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 768px) {
+  .inforAndUpnext {
+    flex-direction: row;
+    margin: var(--padding) 0;
+  }
+}
