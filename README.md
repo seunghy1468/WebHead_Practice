@@ -1,4 +1,8 @@
 # Web_Practice
-  * Web 기초 연습
-    * Header 부분 
-    * Youtube 화면 설계 
+
+  * Web_Head practice
+    * Header 부분 설계
+    * ![1](https://user-images.githubusercontent.com/47622991/121131517-e3457280-c86a-11eb-9a6a-d70a55e9edc8.PNG)
+      ![2](https://user-images.githubusercontent.com/47622991/121131520-e4769f80-c86a-11eb-8eb3-94499d695d5f.PNG)
+ 
+    
