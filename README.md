@@ -38,3 +38,17 @@
         
         ![4](https://user-images.githubusercontent.com/47622991/121134729-b5622d00-c86e-11eb-89cb-bd8a0e1a145b.PNG)
 
+--------------------------------------
+  
+  * Mobile display
+    * nav 
+      * 왼쪽 상단 : hamburger button 및 로고
+      * 오른쪽 상단 : icons (음성인식, 검색, 비디오, 알람 등)  
+      
+    * body
+      * 상단 : video
+      * 중단 : 해시태그, 타이틀, views, subscribers, img, channel_name 등
+      * 하단 : 추천영상 리스트 (썸네일, 타이틀, views)
+      
+      ![3](https://user-images.githubusercontent.com/47622991/121135833-dbd49800-c86f-11eb-9c89-762c0488493e.PNG)
+
