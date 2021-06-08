@@ -2,7 +2,7 @@
 
   ## Web_Head practice
   
-    * Header 부분 설계
+   * Header 부분 설계
       * Wide display
         * 왼쪽 상단 : 로고
         * 가운데 상단 : navigation bar
